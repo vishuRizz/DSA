@@ -2,23 +2,25 @@ import java.util.Arrays;
 
 public class cycleSort {
     public static void main(String[] args) {
-        int[] array = {3, 5,2, 4, 1};
+        int[] array = {4,3,2,7,8,2,3,1};
         sorting(array);
     }
-    public static void sorting(int[] arr){
+
+    public static void sorting(int[] arr) {
         // index = value - 1;
         int i = 0;
-        while(i < arr.length){
-        int correct = arr[i] - 1;
-        if(arr[i] != arr[correct]){
-            swap(arr, i, correct );
-        } else {
-            i++;
-        }
+        while (i < arr.length) {
+            int correct = arr[i] - 1;
+            if (arr[i] != arr[correct]) {
+                swap(arr, i, correct);
+            } else {
+                i++;
+            }
         }
         System.out.println(Arrays.toString(arr));
     }
-    public static void swap(int[] arr, int first, int second){
+
+    public static void swap(int[] arr, int first, int second) {
         int temp = arr[second];
         arr[second] = arr[first];
         arr[first] = temp;

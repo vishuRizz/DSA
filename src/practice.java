@@ -8,18 +8,21 @@ public class practice {
 
     }
 
-    public static void cycleSort(int[] arr) {
+    public static void cycleSort(int[] nums) {
         int i = 0;
-        while (i < arr.length) {
-            if (arr[i] < arr.length && i != arr[i] - 1) {
-                swap(arr, i, arr[i]-1);
+        while (i < nums.length) {
+            int correct = nums[i] - 1;
+            if (nums[i] != nums[correct]) {
+                swap(nums, i, correct);
             } else {
                 i++;
             }
         }
-        System.out.println(Arrays.toString(arr));
+
+        System.out.println(Arrays.toString(nums));
     }
-    public static void swap(int[] arr, int first, int second){
+
+    public static void swap(int[] arr, int first, int second) {
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;
