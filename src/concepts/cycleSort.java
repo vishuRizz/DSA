@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class cycleSort {
     public static void main(String[] args) {
-        int[] array = {4,3,2,7,8,2,3,1};
+        int[] array = {1,2,2,4};
         sorting(array);
     }
 
