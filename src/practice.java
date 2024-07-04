@@ -3,29 +3,19 @@ import java.util.Arrays;
 
 public class practice {
     public static void main(String[] args) {
-        int[] array = {4,3,2,7,8,2,3,1};
-    cycleSort(array);
-
+        System.out.println(countZeros(102034));
     }
-
-    public static void cycleSort(int[] nums) {
-        int i = 0;
-        while (i < nums.length) {
-            int correct = nums[i] - 1;
-            if (nums[i] != nums[correct]) {
-                swap(nums, i, correct);
-            } else {
-                i++;
-            }
+    public static int countZeros(int n){
+        if(n/10 == 0){
+            return 0;
         }
-
-        System.out.println(Arrays.toString(nums));
+        int count=0;
+      if(n%10 == 0){
+          count++;
+         countZeros(n/10);
+      } else{
+          countZeros(n/10);
+      }
+        return count;
     }
-
-    public static void swap(int[] arr, int first, int second) {
-        int temp = arr[first];
-        arr[first] = arr[second];
-        arr[second] = temp;
-    }
-
 }
