@@ -1,10 +1,10 @@
-package concepts;
+package recursion_problems;
 
 import java.util.Arrays;
 
 public class selectionSortByRecursion {
     public static void main(String[] args) {
-        int[] array = {30, 201, -1, -102, 5};
+        int[] array = {5, 4, 3, 2, 1};
         System.out.println(Arrays.toString(selectionSorting(array, 0, 1, array.length)));
 
     }

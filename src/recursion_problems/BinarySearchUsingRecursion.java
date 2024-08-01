@@ -1,4 +1,4 @@
-package concepts;
+package recursion_problems;
 
 public class BinarySearchUsingRecursion {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package concepts;
+package recursion_problems;
 
 public class Recursion {
     public static void main(String[] args) {
@@ -12,7 +12,5 @@ public class Recursion {
            System.out.println(n);
            n++;
            print(n);
-
-
     }
 }
