@@ -1,33 +1,33 @@
-import java.util.HashSet;
+import java.util.Arrays;
 import java.util.Scanner;
-import java.util.Set;
 
 public class randomPractice {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
-        scanner.close();
+   int[] array = {30, 201, -1, -102, 5};
+     BubbleSortByRecursion(array, array.length-1,0);
 
-        System.out.println(getNextZeroLessNumber(number));
     }
 
-    public static int getNextZeroLessNumber(int number) {
-        while (true) {
-            number++;
-            if (!containsZero(number)) {
-                return number;
-            }
+    public static void BubbleSortByRecursion(int[] arr, int i, int j) {
+        if (i == 0) {
+            return;
         }
+        if (i < j) {
+            if (arr[i] > arr[i+1]) {
+                swap(arr, i, i - 1);
+            }
+            BubbleSortByRecursion(arr, i, j + 1);
+
+        } else {
+            i++;
+            BubbleSortByRecursion(arr, i - 1, 0);
+        }
+        System.out.println(Arrays.toString(arr));
     }
 
-    public static boolean containsZero(int number) {
-        while (number > 0) {
-            if (number % 10 == 0) {
-                return true;
-            }
-            number /= 10;
-        }
-        return false;
+    public static void swap(int[] arr, int s, int e) {
+        int temp = arr[s];
+        arr[s] = arr[e];
+        arr[e] = temp;
     }
 }
