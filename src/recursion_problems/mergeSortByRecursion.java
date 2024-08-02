@@ -31,6 +31,7 @@ public class mergeSortByRecursion {
             }
             k++;
         }
+        // when the above two condition won't fulfill at the same time then either on of them will
         // still some indexes might remain even after that cause either one array got ouy of bound
         while(i < left.length){
         mixed[k] = left[i];
