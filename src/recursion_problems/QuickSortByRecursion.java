@@ -8,6 +8,7 @@ public class QuickSortByRecursion {
      sort(array, 0, array.length -1);
         System.out.println(Arrays.toString(array));
     }
+
     static void sort(int[] nums, int low, int hi) {
         if (low >= hi) {
             return;

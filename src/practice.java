@@ -1,16 +1,19 @@
-
 import java.util.Scanner;
 
 public class practice {
     public static void main(String[] args) {
-        Scanner sc =  new Scanner(System.in);
-        int T = sc.nextInt();
-        for (int i = 0; i < T; i++) {
-            int x = sc.nextInt();
-            for (int j = 0; j < x; j++) {
-                String a = sc.next();
-                System.out.println(a);
-            }
-        }
+        print();
     }
+    static void print(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number again:");
+        int n = sc.nextInt();
+        if(n<100 && n > 10){
+            System.out.println("yes your input is good");
+            return;
+        }
+
+        print();
+    }
+
 }

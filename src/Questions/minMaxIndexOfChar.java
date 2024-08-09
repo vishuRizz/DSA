@@ -1,9 +1,10 @@
-import java.sql.Array;
+package Questions;
+
 import java.util.ArrayList;
 
-public class randomPractice {
+public class minMaxIndexOfChar {
     public static void main(String[] args) {
-    String str = "abcdegaa";
+        String str = "abcdegaa";
 
         ArrayList<Integer> list = new ArrayList<>();
         findIndex(str, 0, list);
