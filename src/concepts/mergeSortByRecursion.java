@@ -1,4 +1,4 @@
-package recursion_problems;
+package concepts;
 import java.util.Arrays;
 
 public class mergeSortByRecursion {
