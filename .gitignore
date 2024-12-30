@@ -1,3 +1,39 @@
+# Ignore output directory (if it's inside the project root, outside of src/)
+output/
+
+# Ignore compiled C++ object, binary, and executable files
+*.out
+*.exe
+*.o
+*.obj
+*.a
+*.so
+
+# Ignore Java class files (if applicable)
+*.class
+
+# Ignore VS Code workspace and temporary files
+.vscode/
+*.swp
+
+
+# Ignore all binaries and object files generated from any C++ file inside src/
+src/*.out
+src/*.exe
+src/*.o
+src/*.obj
+src/*.a
+src/*.so
+
+# Ignore Java class files inside src/
+src/*.class
+
+# Ignore output folder if inside src/
+src/output/
+
+
+
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/

@@ -1,7 +1,7 @@
 //  subsets and subsequence pattern
 // use when you need to create some patters of subsets by permutations and combinations
 
-package patterns;
+package Standards;
 import java.util.ArrayList;
 import java.util.List;
 

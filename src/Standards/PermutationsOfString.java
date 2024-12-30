@@ -1,4 +1,4 @@
-package patterns;
+package Standards;
 
 import java.util.ArrayList;
 import java.util.Objects;
